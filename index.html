@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Выбор языка программирования!</title>
+    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js"></script>
+    <script type="text/python" src="main.py"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2"><b>Выбор языка программирования!</b></td>
+        </tr>
+        <tr>
+            <td id="message" colspan="2">Грузится вопрос...</td>
+        </tr>
+        <tr id="buttons">
+            <td><button id="button_no">Нет</button></td>
+            <td><button id="button_yes">Да</button></td>
+        </tr>
+        <tr id="reset_tab" style="display: none">
+            <td colspan="2">
+                <button id="button_reset">Ещё!</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
